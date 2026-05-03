@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/deepstreamIO/deepstream.io-types#readme",
   "devDependencies": {
-    "@deepstream/protobuf": "^1.0.1",
+    "@deepstream/protobuf": "^1.0.9",
     "tslint": "^6.1.1",
     "typescript": "^4"
   }

@@ -134,11 +134,12 @@ export interface WebSocketConnectionEndpoint {
 export type SocketWrapperFactory = Function
 
 export interface DeepstreamHTTPService extends DeepstreamPlugin {
-  registerPostPathPrefix: <DataInterface>(prefix: string, handler: PostRequestHandler<DataInterface>) => void
+  registerPostPathPrefix: <DataInterface>(prefix: string, handler: PostRequestHandler<DataInterface>) => void,
   registerGetPathPrefix: (prefix: string, handler: GetRequestHandler) => void,
-  registerWebsocketEndpoint: (path: string, createSocketWrapper: SocketWrapperFactory, webSocketConnectionEndpointPlugin: WebSocketConnectionEndpoint) => void
-  sendWebsocketMessage: (socket: any, message: any, isBinary: boolean) => void
-  getSocketWrappersForUserId (userId: string): SocketWrapper[]
+  registerWebsocketEndpoint: (path: string, createSocketWrapper: SocketWrapperFactory, webSocketConnectionEndpointPlugin: WebSocketConnectionEndpoint) => void,
+  sendWebsocketMessage: (socket: any, message: any, isBinary: boolean) => void,
+  getSocketWrappersForUserId (userId: string): SocketWrapper[],
+  closeWebsocket: (socket: any) => void
 }
 
 export interface DeepstreamLogger extends DeepstreamPlugin, NamespacedLogger {
