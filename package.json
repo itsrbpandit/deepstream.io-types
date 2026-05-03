@@ -1,6 +1,6 @@
 {
   "name": "@deepstream/types",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "The types and enums used by plugins",
   "main": "dist/index.js",
   "scripts": {
@@ -25,6 +25,6 @@
   "devDependencies": {
     "@deepstream/protobuf": "^1.0.9",
     "tslint": "^6.1.1",
-    "typescript": "^4"
+    "typescript": "^5"
   }
 }

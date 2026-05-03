@@ -1,3 +1,8 @@
+# [2.3.3] - 2026-05-03
+
+- update deps
+- closewebsocket interface
+
 # [2.3.2] - 2023-03-08
 
 - prepack!
